@@ -11,10 +11,10 @@
 <body class="print:bg-inherit">
     <!-- 简历内容 -->
     <div
-        class="container bg-white mx-auto mt-10 border-slate-400 px-8 py-12 space-y-10  sm:space-y-5 print:mt-0 print:mx-0 print:p-0 print:py-4 print:max-w-none print:w-[1024px]">
+        class="container relative flex flex-col justify-center items-center bg-white mx-auto mt-10 border-slate-400 px-8 py-12 sm:space-y-2 print:mt-0 print:max-w-none print:p-0 print:px-8 print:w-[1024px]">
         <!-- 头部个人信息 -->
         <!-- TODO: 设置媒体查询 -->
-        <div class=" flex justify-between flex-col-reverse items-center sm:flex-row sm:px-2">
+        <div class="w-full flex justify-between flex-col-reverse items-center sm:flex-row sm:px-2">
             <div class="resume-info space-y-3">
                 <!-- 姓名 -->
                 <div class="resume-name">
@@ -104,7 +104,7 @@
             </div>
         </div>
         <!-- 工作经验 -->
-        <div class="resume-skills">
+        <div class="resume-experise">
             <!-- 标题 -->
             <div class="flex items-center text-gray-200 mt-8 mb-6">
                 <span class="border h-0 flex-auto"></span>
@@ -206,6 +206,12 @@
                     </li>
                 </ul>
             </div>
+        </div>
+
+        <!-- 二维码 -->
+        <div class="z-20 absolute right-1 bottom-2 print:right-0 print:bottom-[-60px]">
+            <img class="w-10 h-10" src="../assets/qrcode_1740641896862.png" alt="二维码">
+            <span class="hidden print:block print:text-xs print:mt-0.5">在线简历</span>
         </div>
     </div>
     <!-- 底部信息 -->
